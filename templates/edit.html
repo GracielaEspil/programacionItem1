@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+{% block title %} Editar {% endblock %}
+{% block main %}
+
+<div class="container">
+
+    <h1 class="text-center mt-5 mb-5 text-primary">Puedes editar los campos</h1> 
+
+    <div method="POST" action="/edit/{{ partido_id }}"> 
+       
+        <div>
+            <label for="estadio">Estadio:</label>
+            <input type="text" id="estadio" name="estadio" value="{{ partido.estadio }}">    
+        </div><br>
+        <div> 
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" value="{{ partido.fecha }}">
+        </div><br>
+        <div>
+            <label for="clubA">Club A:</label>
+            <input type="text" id="clubA" name="clubA" value="{{ partido.clubA }}">    
+        </div><br>
+        <div>     
+            <label for="clubB">Club B:</label>
+            <input type="text" id="clubB" name="clubB" value="{{ partido.clubB }}">
+        </div><br>
+        <div>
+            <label for="resultado">Resultado:</label>
+            <input type="text" id="resultado" name="resultado" value="{{ partido.resultado }}">
+        </div><br>
+
+        <button type="submit" class="btn btn-outline-primary">Guardar Cambios</button>
+    </div><br>
+    <br>
+    <a href="/"  type="button" class="btn btn-primary btn-lg" >Volver a la lista de Estadios</a>
+    <span>{{ partido.fecha }}</span>
+
+</div>
+
+{% endblock main %}
+
+

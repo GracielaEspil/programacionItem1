@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+{% block title %} Estadios Página de Inicio {% endblock %}
+{% block main %}
+
+    <h1 class="text-center mt-5 mb-5 text-primary">Lista de Estadios con Fechas de Partidos</h1>
+
+
+    <table class="table table-success table-striped">
+        <thead>    
+        <tr>
+            <th>Estadio</th>
+            <th>Fecha del Partido</th>   
+            <th>Leer</th>
+            <th>Editar</th>
+            <th>Eliminar</th>
+        </tr>
+        </thead> 
+
+        <tbody>
+        {% for partido in partidos %}
+        <tr>         
+            <td>{{ partido.estadio }}</td>
+            <td>{{ partido.fecha }}</td>
+            
+            <td>
+                <a class="btn btn-primary" href="/read/{{ partido.id }}">Leer</a>
+            </td>
+            <td>
+                <a class="btn btn-success" href="/edit/{{ partido.id }}">Editar</a>
+            </td>
+            <td> 
+                <a class="btn btn-danger" href="/delete/{{ partido.id }}">Eliminar</a>
+            </td>         
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    
+{% endblock main %}
+    

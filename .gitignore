@@ -1,0 +1,12 @@
+# Ignorar archivos temporales 
+*.swp 
+*~ 
+
+# Ignorar archivos de caché 
+.DS_Store 
+
+# Ignorar directorios build 
+build/ dist/ 
+
+# Ignorar entornos virtuales
+ venv/ env/  

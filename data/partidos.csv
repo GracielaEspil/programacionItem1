@@ -1,0 +1,101 @@
+id,estadio,fecha,clubA,clubB,resultado
+1,Halvorson-Feil,10/03/2022,The Lucky Clover Club,The Lucky Clover Club,1-1
+2,Altenwerth LLC,06/11/2022,The Sapphire Society Club,The Silver Star Club,3-1
+3,"Padberg, Spencer and Casper",21/06/2022,The Lucky Clover Club,The Golden Gate Club,2-0
+4,"Renner, Leuschke and Dietrich",17/02/2022,The Diamond Club,The Sapphire Society Club,0-1
+5,Bernhard-Christiansen,25/11/2022,The Diamond Club,The Sapphire Society Club,1-1
+6,Schultz-Lehner,19/03/2022,The Bronze Lion Club,The Emerald City Club,0-1
+7,Luettgen Inc,27/07/2022,The Platinum Club,The Platinum Club,3-1
+8,"McClure, Brakus and Jast",26/05/2022,The Platinum Club,The Diamond Club,2-2
+9,Stehr-Gorczany,03/05/2022,The Diamond Club,The Bronze Lion Club,1-0
+10,Becker-Hettinger,13/09/2022,The Bronze Lion Club,The Silver Star Club,3-2
+11,Haag-Hane,15/06/2022,The Diamond Club,The Bronze Lion Club,0-1
+12,"Connelly, Cartwright and Hane",08/06/2022,The Silver Star Club,The Sapphire Society Club,4-3
+13,Bogisich and Sons,16/04/2022,The Lucky Clover Club,The Crystal Ball Club,0-0
+14,Cronin Group,24/03/2022,The Crystal Ball Club,The Bronze Lion Club,4-3
+15,Lynch-Muller,28/01/2022,The Golden Gate Club,The Crystal Ball Club,3-1
+16,Doyle Group,18/04/2022,The Lucky Clover Club,The Emerald City Club,3-2
+17,"Donnelly, Pacocha and Watsica",15/11/2022,The Lucky Clover Club,The Lucky Clover Club,3-1
+18,"Wolf, Green and Strosin",29/10/2022,The Bronze Lion Club,The Golden Gate Club,1-0
+19,Kohler-Will,20/04/2022,The Emerald City Club,The Emerald City Club,1-1
+20,Rolfson-Nader,11/08/2022,The Silver Star Club,The Golden Gate Club,1-0
+21,Wiegand Group,21/03/2022,The Lucky Clover Club,The Platinum Club,1-0
+22,Glover and Sons,13/07/2022,The Golden Gate Club,The Golden Gate Club,2-2
+23,"Kunze, Schumm and Feeney",25/02/2022,The Diamond Club,The Platinum Club,1-1
+24,King Group,22/11/2022,The Emerald City Club,The Royal Flush Club,2-2
+25,"Schinner, Hartmann and Adams",21/05/2022,The Diamond Club,The Lucky Clover Club,2-0
+26,Casper Inc,23/06/2022,The Emerald City Club,The Bronze Lion Club,3-1
+27,Bins-Bins,26/08/2022,The Bronze Lion Club,The Emerald City Club,3-2
+28,"Cummings, Bernhard and Wyman",27/08/2022,The Lucky Clover Club,The Golden Gate Club,1-0
+29,Pollich-Watsica,25/08/2022,The Royal Flush Club,The Lucky Clover Club,0-0
+30,Corkery Inc,18/08/2022,The Royal Flush Club,The Bronze Lion Club,4-3
+31,"Senger, Runolfsson and Rau",17/03/2022,The Lucky Clover Club,The Lucky Clover Club,0-1
+32,Upton Inc,10/07/2022,The Crystal Ball Club,The Diamond Club,4-3
+33,Cronin Group,17/02/2022,The Royal Flush Club,The Crystal Ball Club,1-1
+34,Will-Cassin,17/11/2022,The Royal Flush Club,The Emerald City Club,0-0
+35,"Stamm, Blanda and Sauer",25/04/2022,The Sapphire Society Club,The Diamond Club,2-0
+36,"Robel, Stracke and Kessler",26/09/2022,The Crystal Ball Club,The Royal Flush Club,1-1
+37,"Smitham, Lind and Ratke",09/04/2022,The Platinum Club,The Diamond Club,1-0
+38,"Sawayn, Dooley and Effertz",22/12/2022,The Crystal Ball Club,The Diamond Club,2-0
+39,Brekke-Hand,10/01/2022,The Platinum Club,The Emerald City Club,0-0
+40,Goodwin-Cruickshank,12/09/2022,The Lucky Clover Club,The Emerald City Club,1-1
+41,"Mayer, Weissnat and Stokes",23/06/2022,The Bronze Lion Club,The Bronze Lion Club,2-0
+42,Bruen LLC,07/06/2022,The Silver Star Club,The Royal Flush Club,1-0
+43,Goodwin-King,07/01/2022,The Diamond Club,The Silver Star Club,2-0
+44,"Schmeler, Bogisich and Grimes",15/10/2022,The Golden Gate Club,The Lucky Clover Club,0-1
+45,Pfannerstill-Herman,09/11/2022,The Royal Flush Club,The Platinum Club,1-0
+46,"Kuhn, Borer and Parisian",01/06/2022,The Emerald City Club,The Golden Gate Club,0-0
+47,Legros Inc,27/01/2022,The Diamond Club,The Royal Flush Club,3-2
+48,Jakubowski-Brekke,21/09/2022,The Emerald City Club,The Crystal Ball Club,1-0
+49,Bode-Larkin,26/03/2022,The Crystal Ball Club,The Diamond Club,3-1
+50,"Hagenes, Mills and Kub",10/10/2022,The Crystal Ball Club,The Lucky Clover Club,2-0
+51,"Wunsch, Runte and Collier",07/05/2022,The Silver Star Club,The Silver Star Club,0-1
+52,Schuster-Terry,20/11/2022,The Platinum Club,The Golden Gate Club,2-1
+53,D'Amore Group,04/01/2022,The Royal Flush Club,The Emerald City Club,3-1
+54,"Ullrich, Crist and Labadie",14/02/2022,The Bronze Lion Club,The Platinum Club,0-1
+55,Haley and Sons,17/12/2022,The Emerald City Club,The Crystal Ball Club,2-2
+56,Bogan-Schuppe,22/10/2022,The Platinum Club,The Lucky Clover Club,2-1
+57,"Bernier, Nader and Fisher",05/07/2022,The Emerald City Club,The Lucky Clover Club,4-3
+58,Hintz and Sons,10/08/2022,The Silver Star Club,The Golden Gate Club,1-0
+59,"Rosenbaum, Bechtelar and Quigley",20/10/2022,The Golden Gate Club,The Royal Flush Club,3-2
+60,Macejkovic Group,06/07/2022,The Bronze Lion Club,The Sapphire Society Club,3-1
+61,Bogisich-Gerlach,15/05/2022,The Sapphire Society Club,The Emerald City Club,2-1
+62,"Fahey, Grady and Wuckert",27/12/2022,The Crystal Ball Club,The Diamond Club,2-2
+63,Beahan-Sauer,22/11/2022,The Diamond Club,The Lucky Clover Club,2-1
+64,Hammes Inc,22/02/2022,The Sapphire Society Club,The Bronze Lion Club,2-2
+65,Runolfsdottir Group,01/05/2022,The Crystal Ball Club,The Emerald City Club,3-1
+66,"Bednar, Kuhic and Leannon",30/07/2022,The Golden Gate Club,The Bronze Lion Club,0-1
+67,"Reilly, Hermann and Zboncak",01/09/2022,The Diamond Club,The Lucky Clover Club,3-1
+68,"Langworth, Rau and D'Amore",29/09/2022,The Emerald City Club,The Emerald City Club,4-3
+69,"Hagenes, Upton and Halvorson",02/08/2022,The Royal Flush Club,The Silver Star Club,2-0
+70,Cronin Inc,15/07/2022,The Lucky Clover Club,The Emerald City Club,1-0
+71,Barrows Inc,11/01/2022,The Crystal Ball Club,The Sapphire Society Club,2-1
+72,"Jaskolski, Mraz and Bednar",28/03/2022,The Platinum Club,The Sapphire Society Club,4-3
+73,Weber and Sons,22/10/2022,The Platinum Club,The Emerald City Club,4-3
+74,Stanton-Jacobi,30/10/2022,The Sapphire Society Club,The Lucky Clover Club,0-1
+75,Batz and Sons,05/09/2022,The Platinum Club,The Crystal Ball Club,2-1
+76,Metz-Schneider,17/03/2022,The Crystal Ball Club,The Platinum Club,4-3
+77,Wilkinson Inc,09/02/2022,The Bronze Lion Club,The Golden Gate Club,0-1
+78,"Hickle, Kiehn and Wolf",05/11/2022,The Golden Gate Club,The Diamond Club,3-2
+79,"Lind, Muller and Wisozk",31/08/2022,The Platinum Club,The Silver Star Club,3-1
+80,"Kling, Kris and Schaefer",06/01/2022,The Diamond Club,The Diamond Club,3-2
+81,Klein-Sauer,08/05/2022,The Platinum Club,The Bronze Lion Club,2-2
+82,Weber-Heaney,20/10/2022,The Bronze Lion Club,The Platinum Club,3-2
+83,Simonis Group,22/09/2022,The Silver Star Club,The Golden Gate Club,0-1
+84,Hayes Group,18/10/2022,The Golden Gate Club,The Royal Flush Club,1-0
+85,Stehr-Mohr,04/04/2022,The Lucky Clover Club,The Emerald City Club,4-3
+86,Hagenes-Gislason,22/10/2022,The Sapphire Society Club,The Diamond Club,3-2
+87,Heaney-Hickle,01/04/2022,The Emerald City Club,The Sapphire Society Club,1-1
+88,"O'Conner, Russel and Rau",03/07/2022,The Platinum Club,The Golden Gate Club,1-1
+89,Casper-Bins,12/08/2022,The Platinum Club,The Diamond Club,2-1
+90,"Ratke, Harvey and Johnson",21/11/2022,The Sapphire Society Club,The Platinum Club,1-0
+91,"Miller, Botsford and Lehner",27/07/2022,The Crystal Ball Club,The Diamond Club,4-3
+92,Sauer LLC,28/09/2022,The Royal Flush Club,The Golden Gate Club,0-0
+93,Wintheiser Group,12/11/2022,The Lucky Clover Club,The Golden Gate Club,2-0
+94,Zboncak LLC,28/10/2022,The Sapphire Society Club,The Platinum Club,0-1
+95,Collins-Heathcote,16/10/2022,The Crystal Ball Club,The Sapphire Society Club,1-1
+96,Konopelski-McCullough,01/12/2022,The Platinum Club,The Bronze Lion Club,0-1
+97,Schuppe LLC,13/08/2022,The Bronze Lion Club,The Diamond Club,2-0
+98,Kassulke-Kautzer,02/09/2022,The Emerald City Club,The Golden Gate Club,1-0
+99,Waters Inc,20/10/2022,The Lucky Clover Club,The Lucky Clover Club,1-0
+100,Johnston LLC,06/12/2022,The Platinum Club,The Crystal Ball Club,4-3

@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+{% block title %} Detalles de la Tabla {% endblock %}
+{% block main %}
+<div>   
+    <h1 class="text-center mt-5 mb-5 text-primary">Estadio, fecha, equipos y resultado </h1>
+
+    <div>
+        <label for="estadio">Estadio:</label>
+        <input type="text" id="estadio" name="estadio" value="{{ partido.estadio }}">    
+    </div><br>
+
+    <div>
+        <label for="fecha">Fecha:</label>
+        <input readonly type="text" id="fecha" name="fecha" value="{{ partido.fecha }}">
+    </div><br>
+    <div>
+        <label for="clubA">Club A:</label>
+        <input readonly type="text" id="clubA" name="clubA" value="{{ partido.clubA }}">
+    </div><br>
+    <div>
+        <label for="clubB">Club B:</label>
+        <input readonly type="text" id="clubB" name="clubB" value="{{ partido.clubB }}">
+    </div><br>
+    <div>       
+    <label for="resultado">Resultado:</label>
+    <input readonly type="text" id="resultado" name="resultado" value="{{ partido.resultado }}">
+    </div><br>
+    <br>
+    <div >
+        <a href="/" type="button" class="btn btn-primary btn-lg">Volver a la lista de Estadios</a>
+    </div>
+</div>
+
+
+{% endblock main %}    
