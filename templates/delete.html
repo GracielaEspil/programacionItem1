@@ -2,12 +2,10 @@
 {% block title %} Eliminar {% endblock %}
 {% block main %}
 
-<div class="container">
+<div  iv class="container">
+    <h1 class="text-center mt-5 mb-5 text-primary">¿Estas seguro de eliminar el registro?</h1> 
 
-    <h1 class="text-center mt-5 mb-5 text-primary">Puedes eliminar el registro</h1> 
-
-    <div method="DELETE"  action="/delete/{{ partido_id }}"> 
-        <form>
+        <form method="POST"  action="/delete/{{ partido_id }}">
             <div class="row mb-3" >
                 <label for="estadio" class="col-sm-2 col-form-label">Estadio:</label>
                 <div class="col-sm-10">
@@ -39,11 +37,12 @@
                 </div>     
             </div>  
             <button type="submit" class="btn btn-danger">Eliminar</button>     
-          </form> 
-        <div class="d-grid gap-2 col-6 mx-auto">
-            <a href="/"  type="button" class="btn btn-primary btn-lg">Volver a la lista de Estadios</a>
-        </div>
+        </form> 
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <a href="/"  type="button" class="btn btn-primary btn-lg">Volver a la lista de Estadios</a>
     </div>
+
 </div>
 
 {% endblock main %}
+

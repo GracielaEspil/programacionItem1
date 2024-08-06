@@ -3,11 +3,8 @@
 {% block main %}
 
 <div class="container">
-
     <h1 class="text-center mt-5 mb-5 text-primary">Puedes editar los campos</h1> 
-
-    <div method="POST" action="/edit/{{ partido_id }}"> 
-      <form>
+      <form method="POST" action="/edit/{{ partido_id }}" >
         <div class="row mb-3" >
             <label for="estadio" class="col-sm-2 col-form-label">Estadio:</label>
             <div class="col-sm-10">
@@ -38,9 +35,9 @@
                 <input type="text"  class="form-control" id="resultado" name="resultado" value="{{ partido.resultado }}">
             </div>     
         </div>  
-        <button type="submit" class="btn btn-outline-primary">Guardar Cambios</button>     
+        <a  action="/edit/{{ partido.id }}" type="submit" class="btn btn-outline-primary">Guardar Cambios</a>     
       </form>
-    </div> 
+
     <div class="d-grid gap-2 col-6 mx-auto">
         <a href="/"  type="button" class="btn btn-primary btn-lg">Volver a la lista de Estadios</a>
     </div>

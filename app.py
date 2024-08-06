@@ -12,6 +12,7 @@ app = Flask(__name__)
 
 # configuro la URI de la base de datos, el motor y la cadena de conexion
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///dbFinal.db'
+app.config['SECRET_KEY'] = 'supersecretkey'
 db.init_app(app) # Aquí incializa la database 
 
 # primer inicio de la app debo saber si la base esta creada o NO
@@ -22,21 +23,20 @@ with app.app_context():
 
 @app.route('/')
 def index():
-    partidos_db = Partido.query.all()
-    return render_template('index.html', partidos=partidos_db)
+    partido = Partido.query.all()
+    return render_template('index.html', partidos=partido)
 
 
-@app.route("/read/<partidos_id>", methods=["GET", "POST"])
-def read(partidos_id):
-    global partidos
-    partido_db = Partido.query.filter_by(id=partidos_id).first()
-    return render_template('read.html', partido=partido_db)
+@app.route("/read/<partido_id>", methods=["GET", "POST"])
+def read(partido_id):
+    partido = Partido.query.filter_by(id=partido_id).first()
+    return render_template('read.html', partido=partido)
 
 
 
-@app.route("/edit/<partidos_id>", methods=["GET", "POST"])
-def edit(partidos_id):
-    partido = Partido.query.filter_by(id=partidos_id).first() # Obtener partido o lanzar 404, hacer con filter para que devuelva un objeto o instancia en partido
+@app.route("/edit/<partido_id>", methods=["GET", "POST"])
+def edit(partido_id):
+    partido = Partido.query.filter_by(id=partido_id).first()
 
     if request.method == "POST":
         partido.estadio = request.form["estadio"]
@@ -52,22 +52,28 @@ def edit(partidos_id):
         except Exception as e:
             flash(f'Error al actualizar el partido: {e}', 'error')
             return render_template("edit.html", partido=partido)
-
     return render_template("edit.html", partido=partido)
 
-@app.route("/delete/<partido_id>")
+@app.route("/delete/<partido_id>", methods=["GET", "POST"])
 def delete(partido_id):
-    partido_db = Partido.query.get(partido_id)
-    return render_template('delete.html', partido=partido_db)
+    partido = Partido.query.filter_by(id=partido_id).first()
+    if not partido:
+        flash('Partido no encontrado', 'error')
+        return redirect('/')
 
-    if partido_db:
+    if request.method == "POST":
         try:
-            db.session.delete(partido_db)
+            db.session.delete(partido)
             db.session.commit()
+            flash('Partido eliminado correctamente', 'success')
             return redirect('/')
         except Exception as e:
-            print(f'Error al eliminar la tarea')
-    return redirect('/')
+            flash('Error al eliminar el partido', 'error')
+            print(f'Error al eliminar el partido: {e}')
+            return redirect('/')
+        
+    return render_template('delete.html', partido=partido)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
