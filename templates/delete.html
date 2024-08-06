@@ -1,0 +1,49 @@
+{% extends 'layout.html' %}
+{% block title %} Eliminar {% endblock %}
+{% block main %}
+
+<div class="container">
+
+    <h1 class="text-center mt-5 mb-5 text-primary">Puedes eliminar el registro</h1> 
+
+    <div method="DELETE"  action="/delete/{{ partido_id }}"> 
+        <form>
+            <div class="row mb-3" >
+                <label for="estadio" class="col-sm-2 col-form-label">Estadio:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="estadio" name="estadio" value="{{ partido.estadio }}">    
+                </div>   
+            </div>
+            <div class="row mb-3"> 
+                <label for="fecha"class="col-sm-2 col-form-label" >Fecha:</label>
+                <div class="col-sm-10">
+                    <input type="date"  class="form-control" id="fecha" name="fecha" value="{{ partido.fecha }}">
+                </div>    
+            </div>
+            <div class="row mb-3">
+                <label for="clubA" class="col-sm-2 col-form-label">Club A:</label>
+                <div class="col-sm-10">
+                    <input type="text"  class="form-control" id="clubA" name="clubA" value="{{ partido.clubA }}">    
+                </div>    
+            </div>
+            <div class="row mb-3">     
+                <label for="clubB" class="col-sm-2 col-form-label">Club B:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="clubB" name="clubB" value="{{ partido.clubB }}">
+                </div>   
+            </div>
+            <div class="row mb-3">
+                <label for="resultado"class="col-sm-2 col-form-label" >Resultado:</label>
+                <div class="col-sm-10">
+                    <input type="text"  class="form-control" id="resultado" name="resultado" value="{{ partido.resultado }}">
+                </div>     
+            </div>  
+            <button type="submit" class="btn btn-danger">Eliminar</button>     
+          </form> 
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <a href="/"  type="button" class="btn btn-primary btn-lg">Volver a la lista de Estadios</a>
+        </div>
+    </div>
+</div>
+
+{% endblock main %}

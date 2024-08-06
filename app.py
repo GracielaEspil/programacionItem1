@@ -55,11 +55,11 @@ def edit(partidos_id):
 
     return render_template("edit.html", partido=partido)
 
-
-
 @app.route("/delete/<partido_id>")
 def delete(partido_id):
     partido_db = Partido.query.get(partido_id)
+    return render_template('delete.html', partido=partido_db)
+
     if partido_db:
         try:
             db.session.delete(partido_db)
