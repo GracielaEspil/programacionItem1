@@ -60,7 +60,7 @@ def delete(partido_id):
     partido = db.session.query(Partido).get(partido_id)
     if not partido:
         flash('Partido no encontrado', 'error')
-        print('Partido no encontrado') #preguntar a Daniel como se hace print y en donde sale
+        print(f'Partido no encontrado') #preguntar a Daniel como se hace print y en donde sale
         return redirect('/')
 
     if request.method == "POST":
