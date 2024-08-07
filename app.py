@@ -56,14 +56,16 @@ def edit(partido_id):
 
 @app.route("/delete/<partido_id>", methods=["GET", "POST"])
 def delete(partido_id):
-    partido = Partido.query.filter_by(id=partido_id).first()
+    #partido = Partido.query.filter_by(id=partido_id).first()
+    partido = db.session.query(Partido).get(partido_id)
     if not partido:
         flash('Partido no encontrado', 'error')
+        print('Partido no encontrado')
         return redirect('/')
 
     if request.method == "POST":
         try:
-            db.session.delete()
+            db.session.delete(partido)
             db.session.commit()
             flash('Partido eliminado correctamente', 'success')
             return redirect('/')
