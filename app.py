@@ -63,7 +63,7 @@ def delete(partido_id):
 
     if request.method == "POST":
         try:
-            db.session.delete(partido)
+            db.session.delete()
             db.session.commit()
             flash('Partido eliminado correctamente', 'success')
             return redirect('/')
