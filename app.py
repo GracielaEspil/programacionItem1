@@ -32,8 +32,6 @@ def read(partido_id):
     partido = Partido.query.filter_by(id=partido_id).first()
     return render_template('read.html', partido=partido)
 
-
-
 @app.route("/edit/<partido_id>", methods=["GET", "POST"])
 def edit(partido_id):
     partido = Partido.query.filter_by(id=partido_id).first()
@@ -45,6 +43,17 @@ def edit(partido_id):
         partido.clubB = request.form["clubB"]
         partido.resultado = request.form["resultado"]
 
+        # Validar que la fecha no sea futura
+        fecha_ingresada = datetime.strptime(partido.fecha, '%Y-%m-%d')
+        fecha_actual = datetime.now()
+
+        if fecha_ingresada > fecha_actual:
+            flash('La fecha del partido no puede ser futura', 'error')
+            return render_template("edit.html", partido=partido)
+
+        # Convertir la fecha al formato deseado antes de guardarla
+        partido.fecha = fecha_ingresada.strftime('%d-%m-%Y')
+
         try:
             db.session.commit()
             flash('Partido actualizado correctamente', 'success')
@@ -53,6 +62,7 @@ def edit(partido_id):
             flash(f'Error al actualizar el partido: {e}', 'error')
             return render_template("edit.html", partido=partido)
     return render_template("edit.html", partido=partido)
+
 
 @app.route("/delete/<partido_id>", methods=["GET", "POST"])
 def delete(partido_id):
